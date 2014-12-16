@@ -1,3 +1,5 @@
+//luke init commit
+
 var picturevar = [0];
 
 function setBeach(){
