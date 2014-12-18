@@ -27,7 +27,11 @@
 
     <body>
 		<div data-role = "page" id = "pageone">
+			<div data-role = "header">
+				<h1>Event Master!</h1>
+			</div>
 			<div data-role = "content">
+				<h1><center>Organize an event with your friends! Set date, time, location, and anything else to get your friends to attend!</center></h1>
 				<div id="inputs">
 					<form name="input" action="" method="post">
 						<ul data-role = "listview" data-inset = "true">
@@ -75,6 +79,10 @@
 		</div>
 
 		<div data-role = "page" id = "time">
+			<div data-role = "header">
+				<a href="#" data-rel="back">Back</a>
+				<h1>Time</h1>
+			</div>
 			<div data-role = "main" class = "ui-content">
 				<ul data-role = "listview" data-inset = "true">
 					<li><b>Start</b><input type="datetime-local" id = "start"></li>
@@ -82,11 +90,15 @@
 				</ul>
 
 				<!-- Back button -->
-				<a href="#pageone" class="ui-btn" id ="returntime" onclick="datefunc();">Back</a>
+				<a href="#pageone" class="ui-btn" id ="returntime" onclick="datefunc();">Set Time</a>
 			</div>
 		</div>
 
 		<div data-role = "page" id = "pic">
+			<div data-role = "header">
+				<a href="#" data-rel="back">Back</a>
+				<h1>Cover Photo</h1>
+			</div>
 			<div data-role = "main" class = "ui-content">
 				<ul data-role="listview">
 				  <li><a href="#pageone" onclick = setBeach()><img src="https://mobi-summer-evan.s3.amazonaws.com/Picture%20and%20Themes/Z.jpg">Beach</a></li>
@@ -95,16 +107,20 @@
 				</ul>
 
 				<!-- Back Button -->
-				<a href="#pageone" class="ui-btn" id ="returntime">Back</a>
+				<a href="#pageone" class="ui-btn" id ="returntime">Set Cover Photo</a>
 			</div>
 		</div>
 
 		<div data-role = "page" id = "locationpage">
+			<div data-role = "header">
+				<a href="#" data-rel="back">Back</a>
+				<h1>Location</h1>
+			</div>
 			<div data-role = "main" class = "ui-content">
 				<textarea id="pac-input" class="controls" type="text" placeholder="Enter a location"></textarea>
 
 				<!-- Back Button -->
-				<a href="#pageone" class="ui-btn" onclick = "lokifunc();">Back</a>
+				<a href="#pageone" class="ui-btn" onclick = "lokifunc();">Set Location</a>
 			</div>
 		</div>
 
