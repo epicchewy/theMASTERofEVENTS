@@ -542,8 +542,8 @@ function datefunc() {
 			eday = pday;
 		}
 
-		refreshtime("Start: " + nday + ", " + smonth + "/" + sdate + " at " + nhour + ":" + pmin + " " + pm);
-		timebreak("End: " + pday + ", " + emonth + "/" + edate + " at " + phour + ":" + nmin + ' ' + am );
+		refreshtime("Start: " + nday + ", " + (smonth + 1) + "/" + sdate + " at " + nhour + ":" + pmin + " " + pm);
+		timebreak("End: " + pday + ", " + (emonth + 1) + "/" + edate + " at " + phour + ":" + nmin + ' ' + am );
 	}
 }
 
